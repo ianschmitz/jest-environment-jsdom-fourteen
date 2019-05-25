@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "declaration": true,
+    "esModuleInterop": true,
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": false,
@@ -8,7 +9,8 @@
     "noUnusedParameters": true,
     "outDir": "./lib",
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "target": "es5"
   },
   "include": ["src/**/*"],
   "exclude": ["src/**/__mocks__/*", "src/**/__tests__/*"]
