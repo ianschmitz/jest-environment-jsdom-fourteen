@@ -22,4 +22,20 @@ describe("JSDomEnvironment", () => {
       expect(typeof timer).toBe("number");
     });
   });
+
+  it("sets jsdom instance options", () => {
+    const href = "http://foo.com/";
+    instance = new JSDomEnvironment({ testURL: href } as any);
+
+    expect(instance!.global.location.href).toBe(href);
+  });
+
+  it("sets resource loader options", () => {
+    const userAgent = "some agent";
+    instance = new JSDomEnvironment({
+      testEnvironmentOptions: { userAgent },
+    } as any);
+
+    expect(instance!.global.navigator.userAgent).toBe(userAgent);
+  });
 });
