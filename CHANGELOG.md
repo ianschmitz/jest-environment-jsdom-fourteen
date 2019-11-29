@@ -1,3 +1,9 @@
+## 1.0.1 (2019-11-29)
+
+#### :bug: Bug Fix
+
+- [f891deb](https://github.com/ianschmitz/jest-environment-jsdom-fourteen/commit/f891deb17863dfeb5b7a096e33daf569cda64736) Revert `userAgent` bug fix as it unintentionally caused resources to be requested over the network ([@ianschmitz](https://github.com/ianschmitz))
+
 ## 1.0.0 (2019-11-27)
 
 #### :bug: Bug Fix
