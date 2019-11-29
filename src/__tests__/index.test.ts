@@ -29,13 +29,4 @@ describe("JSDomEnvironment", () => {
 
     expect(instance!.global.location.href).toBe(href);
   });
-
-  it("sets resource loader options", () => {
-    const userAgent = "some agent";
-    instance = new JSDomEnvironment({
-      testEnvironmentOptions: { userAgent },
-    } as any);
-
-    expect(instance!.global.navigator.userAgent).toBe(userAgent);
-  });
 });
